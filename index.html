@@ -1,0 +1,115 @@
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(247, 247, 247);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    li {
+        float: left;
+    }
+    li a {
+        display: block;
+        padding: 14px 20px;
+        text-align: center;
+        text-decoration: none;
+        background-color: rgb(247, 247, 247);
+        color: rgb(54, 54, 54);
+    }
+    li a:hover {
+        text-decoration: underline;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    footer {
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+    }
+    .right {
+        float: right;
+    }
+    .center{
+        margin: 0;
+        position: relative;
+        top: 200px;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, 0);
+    }
+    .bar {
+        margin: 0;
+        position: relative;
+        top: 225px;
+        left: 25%;
+        width: 50%;
+        margin-right: -50%;
+    }
+    .buttons1 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    button {
+        display: inline;
+        position: relative;
+        top: 250px;
+        left: 40%;
+        background-color: rgb(247, 247, 247);
+        border: rgb(247, 247, 247);
+        padding: 15px 15px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    button:hover {
+        border: grey;
+        box-shadow: black;
+        color: black;
+    }
+</style>
+<html>
+    <header>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Store</a></li>
+            <div class="right">
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#">Sign in</a></li>
+            </div>
+        </ul>
+    </header>
+
+    <body>
+        <div>
+            <img class="center" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            <form action="/search">
+                <input class="bar" type="text">
+                <div class="buttons">
+                    <button>Google Search</button>
+                    <button>I'm Feeling Lucky</button>
+                </div>
+            </form>
+        </div>
+    </body>
+
+    <footer>
+        <ul>
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">How Search works</a></li>
+            <div class="right">
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Settings</a></li>
+            </div>
+        </ul>
+    </footer>
+
+</html>
